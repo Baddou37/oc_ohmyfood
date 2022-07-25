@@ -1,0 +1,86 @@
+.page_menu
+{
+    box-shadow: none;
+    border-bottom: 2px solid $color-back-ground;
+}
+
+.contenair_img_menu {
+    height: 200px;
+}
+
+.img_bckground_menu {
+    width: 100%;
+    height: 250px;
+    z-index: -1;
+    position: fixed;
+    object-fit: cover;
+}
+
+.menu {
+    background-color: $color-back-ground;
+    border-radius: 35px 35px 0 0;
+    position: relative;
+    @include flex-position;
+    padding-bottom: 70px;
+}
+
+.restaurant-title {
+    @include flex-position ($x-y: row);
+    width: $width;
+    padding-right: 20px;
+
+    &__name {
+        font-family: 'Shrikhand';
+        font-weight: lighter;
+        padding-left: 0;
+    }
+}
+
+.categorie-repas {
+    width: $width;
+    padding-bottom: 40px;
+
+    h3 {
+        margin-bottom: 20px;
+        span {
+            border-bottom: 2px solid $color-tertiary;
+            padding-bottom: 3px;
+        }
+    }
+}
+
+.element-repas { 
+    @include flex-position ($axe-p: space-between, $axe-s: center, $x-y: row);
+    @include shadow;
+    background-color: white;
+    height: 70px;
+    margin-bottom: $size;
+    border-radius: 15px;
+    overflow: hidden;
+    
+    &__text { 
+        white-space: nowrap;
+        overflow: hidden;
+        padding-left: calc($size / 4) * 3;
+        flex: 1;
+    }
+
+    &__title {
+        font-weight: 900;
+        font-size: $size + 2;
+        margin-bottom: calc($size / 2); 
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__small-title { 
+        font-size: $size - 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__prix { 
+        margin-left: auto;
+        padding: 33px 20px 0 0;
+    }
+}

@@ -1,0 +1,34 @@
+main {
+    padding-top: 62px;
+    height: 100%;
+}
+
+body {
+	box-sizing: border-box;
+    font-family: $font-text;
+    width: 100%;
+    height: 100%;
+}
+
+.contenair{
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    font-size: $size--title;
+    font-weight: bold;
+    padding: 20px;
+    width: 100%;
+}
+
+h4 {
+    font-size: $size;
+    font-weight: bold;
+    margin-bottom: $size*0.5;
+}

@@ -1,0 +1,26 @@
+/* animation bouton check */
+
+.element-repas {
+
+    &__contenair-animation{
+        background-color: $color-tertiary;
+        height: 100%;
+    }
+
+    &__animation {
+        color: white;
+        @include flex-position;
+        height: 100%;
+        transition: all 0.5s linear;
+        width: 0px;
+    }
+
+    &:hover .element-repas__animation {
+        width : 60px;
+    }
+
+    &:hover .fa-circle-check {
+        transform: rotate(1turn);
+    }
+
+}

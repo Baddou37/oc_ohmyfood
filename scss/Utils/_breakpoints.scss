@@ -1,0 +1,28 @@
+$desktop: 1200px;
+$desktop-large:1800px;
+$tablette: 600px;
+$tablette-desktop:900px;
+
+@mixin tablette {
+    @media screen and (min-width: $tablette) and (max-width: calc($tablette-desktop - 1px)){
+        @content;
+    }
+}
+
+@mixin tablette-desktop {
+    @media screen and (min-width: $tablette-desktop) and (max-width: calc($desktop - 1px)){
+        @content;
+    }
+}    
+
+@mixin desktop {
+    @media screen and (min-width: $desktop) and (max-width: calc($desktop-large - 1px)){
+        @content;
+    }
+}
+
+@mixin desktop-large {
+    @media screen and (min-width: $desktop-large){
+        @content;
+    }    
+}

@@ -1,0 +1,63 @@
+.footer
+{
+    background-color: $color-back-ground-footer;
+    color: white;
+    width: 100%;
+    @include flex-position;
+
+    &_display {
+        padding: 20px 0 25px 0;
+        width: 90%;
+    }
+
+
+    &_title {
+        font-family: $font-logo;
+        font-weight: 400;
+        width: $width;
+        margin-bottom: 20px;
+        @include desktop{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        @include desktop-large{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+
+    ul{
+        @include desktop{
+            display: flex;
+            justify-content: space-around;
+        }
+        @include desktop-large{
+            display: flex;
+            justify-content: space-around;
+        }
+
+    }
+
+    li {
+        font-size: $size;
+        margin-bottom: $size *0.85;
+    }
+
+    i {
+        width: $size;
+        font-size: 82%;
+    }
+
+    .fa-handshake-angle {
+        transform: scale(0.7,1);
+    }
+
+    a {
+        color: white;
+    }
+
+}
+

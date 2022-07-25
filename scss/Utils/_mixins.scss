@@ -1,0 +1,18 @@
+@mixin flex-position ($axe-p: space-around, $axe-s: center, $x-y: column) {
+    display: flex;
+    justify-content: $axe-p;
+    align-items: $axe-s;
+    flex-direction: $x-y;
+ }
+
+ @mixin shadow {
+    box-shadow: $shadow;
+    transition: 0.2s;
+    &:hover{
+        box-shadow:  calc($size/4) calc($size/3) calc($size/2) rgba(128, 128, 128, 0.5);
+    }    
+
+    &:active{
+        box-shadow:  calc($size/4) calc($size/3) calc($size/2) rgba(128, 128, 128, 0.5);
+    }
+ }

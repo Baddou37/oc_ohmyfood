@@ -1,0 +1,27 @@
+.fa-heart{
+    &:hover{
+        color: $color-primary;
+        cursor: pointer;
+
+        &::after  {
+            transform: translate(0%, 0%) scale(1.1);
+            transition: all 0.3s cubic-bezier(.14,1.45,.49,1.84);
+            transform-origin: bottom;
+        }
+    }
+
+    &::before {
+        @include flex-position;
+    }
+
+    &::after{
+        content: "\f004";
+        font-weight: 900;
+        @include flex-position;
+        background-image: linear-gradient($color-secondary, $color-primary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        transform: translate(0) scale(0);
+        transition: all 0.3s cubic-bezier(0.85, 0.23, 1, 0.52);
+    }
+}

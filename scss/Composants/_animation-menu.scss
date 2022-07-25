@@ -1,0 +1,59 @@
+/* animation apparition des cartes */
+
+@keyframes glissement_vertical {
+    from {
+        opacity: 0;
+        transform: translate(0, 30%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0%, 0%);
+    }
+}
+
+@for $i from 1 through 4 {
+    .categorie-repas:nth-child(#{$i}) {
+
+        @for $e from 1 through 5 {
+            .element-repas:nth-child(#{$e}){
+                animation-delay: calc($e * 0.2s) + calc(calc($i)*0.1);
+                animation-duration: 2s;
+                animation-name: glissement_vertical;
+                animation-iteration-count: 1;
+                opacity: 0;
+                animation-fill-mode: forwards;
+            }  
+        }
+    }
+}
+
+/* animation apparition des catégories */
+
+@keyframes glissement_horizontal {
+    from {
+        opacity: 0;
+        transform: translate(100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0%, 0%);
+    }
+}
+
+@for $i from 1 through 4 {
+    .categorie-repas:nth-child(#{$i}) {
+
+        @for $e from 1 through 4 {
+            .categorie-repas__title:nth-child(#{$e}){
+                animation-delay: calc($e * 0.2s) + calc(calc($i)*0.1);
+                animation-duration: 1.2s;
+                animation-name: glissement_horizontal;
+                animation-iteration-count: 1;
+                opacity: 0;
+                animation-fill-mode: forwards;
+            }  
+        }
+    }
+}

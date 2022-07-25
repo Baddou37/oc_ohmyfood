@@ -1,0 +1,241 @@
+.localisation {
+    font-size: $size;
+    width: 100%;
+    height: auto;
+    background-color: $color-back-ground-localisation;
+    @include flex-position ($axe-p: center, $x-y: row);
+    font-weight: bold;
+
+    h3 
+    {
+        padding: $size;
+    }
+}
+
+.intro
+{
+    background-color: $color-back-ground;
+    @include flex-position;
+    padding: $size--title;
+    text-align: center;
+
+    p {
+        padding-bottom: $size--title;
+    }
+
+    a {
+        margin-bottom: $size--title;
+    }
+}
+
+.display_desktop-large{
+    @include desktop-large{
+        display: flex;
+        height: 100%
+    }
+}
+
+#fonctionnement {
+    @include flex-position;
+    width: 100%;
+    padding-bottom: $size*2.5;
+    padding-top: $size;
+
+    @include desktop-large{
+        width: 450px;
+        height: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+.liste {
+    width: $width;
+    @include desktop {
+        max-width: 1440px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    @include desktop-large{
+        
+    }
+}
+
+.accueil_h2 {
+    width: $width;
+    @include desktop {
+        display: flex;
+        justify-content: center;
+    }  
+}
+
+.h2_bottom {
+    @include desktop{
+        border-bottom: 2px solid $color-tertiary;
+        padding-bottom: 5px;
+    }
+
+    @include desktop-large{
+        border-bottom: 2px solid $color-tertiary;
+        padding-bottom: 5px;
+    }
+}
+
+.element-liste{
+    @include flex-position ($axe-p: flex-start, $x-y: row); 
+    width: calc(100% - 15px);
+    height: auto;
+    padding: $size*2 0 $size*1.5 0;
+    background-color: $color-back-ground;
+    border-radius: 25px;
+    margin-bottom: $size*1.5;
+    position: relative;
+    left: 15px;
+    @include shadow;
+    @include desktop {
+        width: 25%
+    }
+
+    @include desktop-large{
+        width: 300px;
+    }
+
+    &__numero{
+        @include flex-position;
+        color: white;
+        font-weight: bold;
+        width: 30px;
+        height: 30px;
+        background-color: $color-primary;
+        border-radius: 100%;
+        position: absolute;
+        left: -15px;
+    }
+
+    &__icon{
+        padding: 0 25px 0 40px;
+        color: $color-icons;
+        font-size: $size--icon;
+
+    }
+
+    &__txt{
+        font-weight: bold;
+        font-size: $size;
+    }
+
+    &:hover{
+        background-color: lighten($color-primary,35);
+        cursor: pointer;
+    }
+
+    &:hover .element-liste__icon {
+        color: $color-primary;
+    }
+
+    &:active{
+        background-color: lighten($color-primary,35);
+        cursor: pointer;
+    }
+
+    &:active .element-liste__icon {
+        color: $color-primary;
+    }
+}
+
+
+#restaurants {
+    background-color: $color-back-ground;
+    @include flex-position;
+    width: 100%;
+    padding-top: $size*2;
+
+    @include desktop-large {
+        background-color: white;
+        padding-top: 0;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.restaurant_display_cards {
+    width: $width;
+    @include flex-position;
+    margin-bottom: 60px;
+    justify-content: space-between;
+    height: 1050px;
+    @include desktop {
+        max-width: 1440px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: row;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    @include desktop-large {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+        height: 100%;
+        margin-bottom: 0;
+    }
+}
+
+.restaurant_card {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius:10px;
+    position: relative;
+    @include shadow;
+
+    @include desktop {
+        width: 40%;
+        justify-content: space-around;
+        margin: 20px 0 30px 0;
+    }
+
+    @include desktop-large{
+        width: 20%;
+    }
+
+    &_top {
+        width: 100%;
+        height: 175px;
+        img  {
+            width: 100%;
+            height: 175px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+            object-position: 50% 62%;
+        }
+
+        .new{
+            width:80px;
+            height: 30px;
+            font-size: $size;
+            color:#008766;
+            background-color: #99e2d0;
+            border-radius: 5px;
+            @include flex-position;
+            font-weight:600;
+            position: absolute;
+            right: 12px;
+            top: 12px;
+        }
+    }
+
+    &_bottom {
+        padding: $size;
+        @include flex-position ($axe-p: space-between, $axe-s: center, $x-y: row);
+    }
+
+    
+}

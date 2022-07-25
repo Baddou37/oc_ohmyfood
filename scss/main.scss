@@ -1,0 +1,21 @@
+/* ---------- Font ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+@import "./Base/reset";
+@import "./Utils/mixins";
+@import "./Utils/variables";
+@import "./Utils/breakpoints";
+
+@import "./Composants/loader";
+@import "./Layout/header";
+@import "./Layout/body";
+@import "./Layout/footer";
+@import "./Pages/accueil";
+@import "./Pages/menu";
+@import "./Composants/button";
+@import "./Composants/animation-menu";
+@import "./Composants/animation-checked";
+@import "./Composants/animation_heart";
+
+

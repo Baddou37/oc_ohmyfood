@@ -1,0 +1,29 @@
+/* Header */
+header
+{
+    @include flex-position;
+    width: 100%;
+    z-index: 99;
+    position: fixed;
+    box-shadow: $shadow;
+    width: 100%;
+    background-color: white;
+
+    h1 {
+        font-family: $font-logo;
+        font-size: $size--logo;
+        padding: $padding--logo;
+    }
+
+    a {
+        color: black;
+    }
+
+    .fa-arrow-left { 
+        position: absolute;
+        left: $size--title;
+        top: 55%;
+    }
+}
+
+
