@@ -592,7 +592,7 @@ h4 {
   .display_menu_destop {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
     width: 90%;
   }

@@ -57,7 +57,7 @@
     @include flex-position;
     width: 100%;
     @include desktop{
-        @include flex-position ($x-y:row, $axe-p:space-between);
+        @include flex-position ($x-y:row, $axe-p:space-between, $axe-s:flex-start);
         width: $width;
     }
 }
