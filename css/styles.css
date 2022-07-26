@@ -369,6 +369,7 @@ h4 {
 }
 @media screen and (min-width: 1200px) {
   .element-liste {
+    width: 25%;
     min-width: 300px;
   }
 }
