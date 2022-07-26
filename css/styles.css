@@ -145,6 +145,11 @@ header {
   background-color: white;
   height: 7vh;
 }
+@media screen and (min-width: 1200px) {
+  header {
+    position: static;
+  }
+}
 header h1 {
   font-family: "Shrikhand", cursive;
   font-size: 32px;

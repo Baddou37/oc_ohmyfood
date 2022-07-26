@@ -16,6 +16,10 @@ header
     background-color: white;
     height: 7vh;
 
+    @include desktop{
+        position: static;
+    }
+
     
 
     h1 {
