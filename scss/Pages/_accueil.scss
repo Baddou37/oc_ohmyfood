@@ -79,7 +79,7 @@
 
 .element-liste{
     @include flex-position ($axe-p: flex-start, $x-y: row); 
-    width: 300px;
+    width: 95%;
     height: auto;
     padding: $size*2 0 $size*1.5 0;
     background-color: $color-back-ground;
@@ -88,6 +88,14 @@
     position: relative;
     left: 15px;
     @include shadow;
+
+    @include desktop {
+        min-width: 300px;
+    }
+
+    @include tablette{
+        min-width: 300px;
+    }
 
     &__numero{
         @include flex-position;

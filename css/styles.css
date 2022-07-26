@@ -350,7 +350,7 @@ h4 {
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  width: 300px;
+  width: 95%;
   height: auto;
   padding: 32px 0 24px 0;
   background-color: #f6f6f6;
@@ -366,6 +366,16 @@ h4 {
 }
 .element-liste:active {
   box-shadow: 4px 5.3333333333px 8px rgba(128, 128, 128, 0.5);
+}
+@media screen and (min-width: 1200px) {
+  .element-liste {
+    min-width: 300px;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1199px) {
+  .element-liste {
+    min-width: 300px;
+  }
 }
 .element-liste__numero {
   display: flex;
