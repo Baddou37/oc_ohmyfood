@@ -1069,6 +1069,9 @@ h4 {
   transform: rotate(1turn);
 }
 
+.fa-heart {
+  min-width: 22px;
+}
 .fa-heart:hover {
   color: #9356DC;
   cursor: pointer;
@@ -1079,12 +1082,16 @@ h4 {
   transform-origin: bottom;
 }
 .fa-heart::before {
+  position: relative;
+  top: 12px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
 }
 .fa-heart::after {
+  height: 24px;
+  color: transparent;
   content: "\f004";
   font-weight: 900;
   display: flex;

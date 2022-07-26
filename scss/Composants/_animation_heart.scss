@@ -1,4 +1,5 @@
 .fa-heart{
+    min-width: $size--icon;
     &:hover{
         color: $color-primary;
         cursor: pointer;
@@ -11,10 +12,14 @@
     }
 
     &::before {
+        position: relative;
+        top: 12px;
         @include flex-position;
     }
 
     &::after{
+        height: 24px;
+        color: transparent;
         content: "\f004";
         font-weight: 900;
         @include flex-position;
