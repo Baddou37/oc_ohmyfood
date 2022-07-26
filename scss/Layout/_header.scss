@@ -1,4 +1,10 @@
 /* Header */
+.page_menu{
+    @include desktop{
+        position: relative;
+    }
+}
+
 header
 {
     @include flex-position;
@@ -8,6 +14,9 @@ header
     box-shadow: $shadow;
     width: 100%;
     background-color: white;
+    height: 7vh;
+
+    
 
     h1 {
         font-family: $font-logo;
