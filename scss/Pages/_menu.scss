@@ -5,20 +5,7 @@
 }
 
 .contenair_img_menu {
-    height: 200px;
-
-    @include desktop{
-        display: none;
-    }
-}
-
-.background_desktop {
-    @include desktop {
-        background-image: url(/images/restaurants/A_la_française.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 82vh;
-    }
+    height: auto;
 }
 
 .img_bckground_menu {

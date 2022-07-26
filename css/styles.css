@@ -538,21 +538,7 @@ h4 {
 }
 
 .contenair_img_menu {
-  height: 200px;
-}
-@media screen and (min-width: 1200px) {
-  .contenair_img_menu {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .background_desktop {
-    background-image: url(/images/restaurants/A_la_française.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 82vh;
-  }
+  height: auto;
 }
 
 .img_bckground_menu {
