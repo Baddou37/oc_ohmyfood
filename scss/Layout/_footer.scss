@@ -20,12 +20,7 @@
             display: flex;
             justify-content: center;
             width: 100%;
-        }
-
-        @include desktop-large{
-            display: flex;
-            justify-content: center;
-            width: 100%;
+            font-size: 150%;
         }
     }
 
@@ -34,11 +29,6 @@
             display: flex;
             justify-content: space-around;
         }
-        @include desktop-large{
-            display: flex;
-            justify-content: space-around;
-        }
-
     }
 
     li {

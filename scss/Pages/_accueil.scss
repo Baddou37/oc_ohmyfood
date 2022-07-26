@@ -28,25 +28,11 @@
     }
 }
 
-.display_desktop-large{
-    @include desktop-large{
-        display: flex;
-        height: 100%
-    }
-}
-
 #fonctionnement {
     @include flex-position;
     width: 100%;
     padding-bottom: $size*2.5;
     padding-top: $size;
-
-    @include desktop-large{
-        width: 450px;
-        height: 100%;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
 }
 
 .liste {
@@ -57,9 +43,6 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-    }
-    @include desktop-large{
-        
     }
 }
 
@@ -76,11 +59,6 @@
         border-bottom: 2px solid $color-tertiary;
         padding-bottom: 5px;
     }
-
-    @include desktop-large{
-        border-bottom: 2px solid $color-tertiary;
-        padding-bottom: 5px;
-    }
 }
 
 .element-liste{
@@ -93,14 +71,10 @@
     margin-bottom: $size*1.5;
     position: relative;
     left: 15px;
+    max-width: 300px;
     @include shadow;
-    @include desktop {
-        width: 25%
-    }
 
-    @include desktop-large{
-        width: 300px;
-    }
+
 
     &__numero{
         @include flex-position;
@@ -151,14 +125,6 @@
     @include flex-position;
     width: 100%;
     padding-top: $size*2;
-
-    @include desktop-large {
-        background-color: white;
-        padding-top: 0;
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
 }
 
 .restaurant_display_cards {
@@ -178,15 +144,41 @@
         margin-bottom: 30px;
     }
 
-    @include desktop-large {
+    @include tablette {
+        max-width: 1440px;
+        margin: auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-direction: row;
-        height: 100%;
-        margin-bottom: 0;
+        height: auto;
+        margin-bottom: 30px;
     }
 }
+
+.display_top{
+    @include tablette{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+}
+
+#nouveau{
+    display: none;
+    @include tablette{
+        display: block;
+    }
+}
+
+.nouveau_display_cards {
+    display: none;
+    @include tablette {
+        width: $width;
+        @include flex-position;
+    }
+}
+
 
 .restaurant_card {
     width: 100%;
@@ -202,8 +194,10 @@
         margin: 20px 0 30px 0;
     }
 
-    @include desktop-large{
-        width: 20%;
+    @include tablette {
+        width: 40%;
+        justify-content: space-around;
+        margin: 20px 0 30px 0;
     }
 
     &_top {
