@@ -243,8 +243,6 @@ h4 {
   .footer ul {
     display: flex;
     justify-content: space-around;
-    position: relative;
-    bottom: 0;
   }
 }
 .footer li {
