@@ -5,16 +5,14 @@
         cursor: pointer;
 
         &::after  {
-            transform: translate(0%, 0%) scale(1.1);
-            transition: all 0.3s linear;
-            transform-origin: bottom;
+            transform: translate(0%, 0%) scale(1.2) rotate(3turn);
+            transition: all 0.5s cubic-bezier(.17,.67,.83,.67);
         }
     }
 
     &::before {
         position: relative;
         top: 12px;
-        @include flex-position;
     }
 
     &::after{
@@ -27,6 +25,6 @@
         background-clip: text;
         -webkit-background-clip: text;
         transform: translate(0) scale(0);
-        transition: all 0.3s linear;
+        transition: all 0.5s cubic-bezier(.17,.67,.83,.67);
     }
 }

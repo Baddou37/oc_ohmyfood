@@ -1090,17 +1090,12 @@ h4 {
   cursor: pointer;
 }
 .fa-heart:hover::after {
-  transform: translate(0%, 0%) scale(1.1);
-  transition: all 0.3s linear;
-  transform-origin: bottom;
+  transform: translate(0%, 0%) scale(1.2) rotate(3turn);
+  transition: all 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 .fa-heart::before {
   position: relative;
   top: 12px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
 }
 .fa-heart::after {
   height: 24px;
@@ -1115,7 +1110,7 @@ h4 {
   background-clip: text;
   -webkit-background-clip: text;
   transform: translate(0) scale(0);
-  transition: all 0.3s linear;
+  transition: all 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 
 /*# sourceMappingURL=styles.css.map */
