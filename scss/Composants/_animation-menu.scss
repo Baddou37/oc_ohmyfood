@@ -17,7 +17,7 @@
 
         @for $e from 1 through 5 {
             .element-repas:nth-child(#{$e}){
-                animation-delay: calc($e * 0.2s) + calc(calc($i)*0.1);
+                animation-delay: calc($e * 0.2s) + calc($i*1.1);
                 animation-duration: 2s;
                 animation-name: glissement_vertical;
                 animation-iteration-count: 1;
