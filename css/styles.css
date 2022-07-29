@@ -204,6 +204,13 @@ h4 {
   margin-bottom: 8px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer_desktop {
+    position: fixed;
+    bottom: 0;
+  }
+}
+
 .footer {
   background-color: #353535;
   color: white;
@@ -427,6 +434,11 @@ h4 {
   flex-direction: column;
   width: 100%;
   padding-top: 32px;
+}
+@media screen and (min-width: 1200px) {
+  #restaurants {
+    margin-bottom: 100px;
+  }
 }
 
 .restaurant_display_cards {
