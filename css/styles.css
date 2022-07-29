@@ -204,14 +204,6 @@ h4 {
   margin-bottom: 8px;
 }
 
-@media screen and (min-width: 1200px) {
-  .footer_desktop {
-    height: 10vh;
-    position: fixed;
-    bottom: 0;
-  }
-}
-
 .footer {
   background-color: #353535;
   color: white;
@@ -261,6 +253,7 @@ h4 {
 }
 
 .localisation {
+  margin-top: 10px;
   font-size: 16px;
   width: 100%;
   height: auto;
@@ -270,6 +263,11 @@ h4 {
   align-items: center;
   flex-direction: row;
   font-weight: bold;
+}
+@media screen and (min-width: 1200px) {
+  .localisation {
+    margin-top: 0;
+  }
 }
 .localisation h3 {
   padding: 16px;
@@ -429,6 +427,7 @@ h4 {
   flex-direction: column;
   width: 100%;
   padding-top: 32px;
+  margin-bottom: 50px;
 }
 
 .restaurant_display_cards {
@@ -570,7 +569,8 @@ h4 {
   align-items: center;
   flex-direction: column;
   padding-bottom: 70px;
-  top: 40px;
+  top: 220px;
+  margin-bottom: 220px;
 }
 @media screen and (min-width: 1200px) {
   .menu {

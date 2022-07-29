@@ -1,11 +1,3 @@
-.footer_desktop{
-    @include desktop {
-        height: 10vh;
-        position: fixed;
-        bottom: 0;
-    }
-}
-
 .footer
 {
     background-color: $color-back-ground-footer;

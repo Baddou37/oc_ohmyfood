@@ -1,10 +1,15 @@
 .localisation {
+    margin-top: 10px;
     font-size: $size;
     width: 100%;
     height: auto;
     background-color: $color-back-ground-localisation;
     @include flex-position ($axe-p: center, $x-y: row);
     font-weight: bold;
+
+    @include desktop {
+        margin-top: 0;
+    }
 
     h3 
     {
@@ -147,6 +152,7 @@
     @include flex-position;
     width: 100%;
     padding-top: $size*2;
+    margin-bottom: 50px;
 }
 
 .restaurant_display_cards {
