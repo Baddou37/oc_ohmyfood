@@ -1,9 +1,3 @@
-.main-accueil{
-    @include desktop {
-        padding-top: 100px;
-    }
-}
-
 .localisation {
     font-size: $size;
     width: 100%;
@@ -247,4 +241,11 @@
     }
 
     
+}
+
+.main-accueil{
+    @include desktop {
+        padding-top: 7vh;
+        height: 100%;
+    }
 }
