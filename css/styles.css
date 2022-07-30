@@ -126,12 +126,6 @@ table {
   }
 }
 /* Header */
-@media screen and (min-width: 1200px) {
-  .page_menu {
-    position: relative;
-  }
-}
-
 header {
   display: flex;
   justify-content: space-around;
@@ -144,11 +138,6 @@ header {
   width: 100%;
   background-color: white;
   height: 7vh;
-}
-@media screen and (min-width: 1200px) {
-  header {
-    position: static;
-  }
 }
 header h1 {
   font-family: "Shrikhand", cursive;
@@ -171,6 +160,9 @@ main {
 @media screen and (min-width: 1200px) {
   main {
     padding-top: 0;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -202,13 +194,6 @@ h4 {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 8px;
-}
-
-@media screen and (min-width: 1200px) {
-  .footer_desktop {
-    position: fixed;
-    bottom: 0;
-  }
 }
 
 .footer {
@@ -257,6 +242,12 @@ h4 {
 }
 .footer a {
   color: white;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-accueil {
+    padding-top: 100px;
+  }
 }
 
 .localisation {
@@ -434,11 +425,6 @@ h4 {
   width: 100%;
   padding-top: 32px;
 }
-@media screen and (min-width: 1200px) {
-  #restaurants {
-    margin-bottom: 100px;
-  }
-}
 
 .restaurant_display_cards {
   width: 90%;
@@ -588,7 +574,7 @@ h4 {
     width: 90%;
     margin: auto;
     position: relative;
-    top: 80px;
+    top: 25px;
     border-radius: 35px;
     z-index: 1;
   }

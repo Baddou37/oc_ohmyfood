@@ -1,10 +1,4 @@
 /* Header */
-.page_menu{
-    @include desktop{
-        position: relative;
-    }
-}
-
 header
 {
     @include flex-position;
@@ -16,11 +10,6 @@ header
     background-color: white;
     height: 7vh;
 
-    @include desktop{
-        position: static;
-    }
-
-    
 
     h1 {
         font-family: $font-logo;

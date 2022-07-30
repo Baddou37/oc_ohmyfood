@@ -4,6 +4,9 @@ main {
 
     @include desktop {
         padding-top: 0;
+        height: 88vh;
+        display: flex;
+        flex-direction: column;
     }
 }
 
