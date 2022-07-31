@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--font awesome-->
     <script src="https://kit.fontawesome.com/c005bc523d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/home.css">
     <title>ohmyfood</title>
 </head>
-<body>    
+
+<body>
     <!-- INSERTION DU LOADER-->
-    <div class="loader">
+    <!-- <div class="loader">
         <div class="loader_text">Chargement...</div>
         <div class="loader_mobile">
             <div class="loader_mobile__bar"></div>
         </div>
-    </div>
+    </div> -->
     <header>
-        <h1>ohmyfood</h1>
+        <a href="#"><h1>ohmyfood</h1></a>
     </header>
     <main class="main-accueil">
         <!--SECTION LOCALISATION START-->
         <section class="localisation">
             <i class="fa-solid fa-location-dot localisation__icon"></i>
-            <h3 class="localisation__place">Paris, Belleville</h3>
+            <input type="test" class="localisation__place" placeholder="Paris, Belleville" />
         </section>
         <!--SECTION LOCALISATION END-->
         <!--SECTION INTRO START-->
@@ -36,91 +38,91 @@
         </section>
         <!--SECTION INTRO END-->
         <!--SECTION FONCTIONNEMENT START-->
-            <section id="fonctionnement">
-                <h2 class="accueil_h2"><span class="h2_bottom">Fonctionnement</span></h2>
-                    <ul class="liste">
-                        <li class="element-liste">
-                            <div class="element-liste__numero">1</div>
-                            <i class="fa-solid fa-mobile-screen-button element-liste__icon"></i>
-                            <p class="element-liste__txt">Choisissez un restaurant</p>
-                        </li>
-    
-                        <li class="element-liste">
-                            <div class="element-liste__numero">2</div>
-                            <i class="fa-solid fa-list-ul element-liste__icon"></i>
-                            <p class="element-liste__txt">Composez votre menu</p>
-                        </li>
-    
-                        <li class="element-liste">
-                            <div class="element-liste__numero">3</div>
-                            <i class="fa-solid fa-store element-liste__icon"></i>
-                            <p class="element-liste__txt">Dégustez au restaurant</p>
-                        </li>
-                    </ul>
-            </section>
-            <!--SECTION FONCTIONNEMENT END-->
-            <!--SECTION RESTAURANTS START-->
-            <section id="restaurants">
-                <h2 class="accueil_h2"><span class="h2_bottom">Restaurants</span></h2>
-                <div class="restaurant_display_cards">
-                    <a href="./menu_la_palette_du_gout.html" class="restaurant_card">
-                        <div class="restaurant_card_top">
-                            <img src="./images/restaurants/la_palette_du_gout.jpg" alt="photo la palette du gout">
-                            <span class="new">Nouveau</span>
+        <section id="fonctionnement">
+            <h2 class="accueil_h2"><span class="h2_bottom">Fonctionnement</span></h2>
+            <ul class="liste">
+                <li class="element-liste">
+                    <span class="element-liste__numero">1</span>
+                    <i class="fa-solid fa-mobile-screen-button element-liste__icon"></i>
+                    <p class="element-liste__txt">Choisissez un restaurant</p>
+                </li>
+
+                <li class="element-liste">
+                    <span class="element-liste__numero">2</span>
+                    <i class="fa-solid fa-list-ul element-liste__icon"></i>
+                    <p class="element-liste__txt">Composez votre menu</p>
+                </li>
+
+                <li class="element-liste violet">
+                    <span class="element-liste__numero">3</span>
+                    <i class="fa-solid fa-store element-liste__icon icon_violet"></i>
+                    <p class="element-liste__txt">Dégustez au restaurant</p>
+                </li>
+            </ul>
+        </section>
+        <!--SECTION FONCTIONNEMENT END-->
+        <!--SECTION RESTAURANTS START-->
+        <section id="restaurants">
+            <h2 class="accueil_h2"><span class="h2_bottom">Restaurants</span></h2>
+            <div class="restaurant_display_cards">
+                <a href="./menu_la_palette_du_gout.html" class="restaurant_card">
+                    <div class="restaurant_card_top">
+                        <img src="./images/restaurants/la_palette_du_gout.jpg" alt="photo la palette du gout">
+                        <span class="new">Nouveau</span>
+                    </div>
+                    <div class="restaurant_card_bottom">
+                        <div class="restaurant_card_bottom_infos">
+                            <h3 class="restaurant_card_bottom_infos_title">La palette du goût</h3>
+                            <p class="restaurant_card_bottom_place">Ménilmontant</p>
                         </div>
-                        <div class="restaurant_card_bottom">
-                            <div class="restaurant_card_bottom_infos">
-                                <h4 class="restaurant_card_bottom_infos_title">La palette du goût</h4>
-                                <p class="restaurant_card_bottom_place">Ménilmontant</p>
-                            </div>
-                            <i class="far fa-heart fa-xl"></i>
+                        <i class="far fa-heart fa-xl"></i>
+                    </div>
+                </a>
+                <a href="./menu_la_note_enchantee.html" class="restaurant_card">
+                    <div class="restaurant_card_top">
+                        <img src="./images/restaurants/la_note_enchantée.jpg" alt="photo la note enchantée">
+                        <span class="new">Nouveau</span>
+                    </div>
+                    <div class="restaurant_card_bottom">
+                        <div class="restaurant_card_bottom_infos">
+                            <h3 class="restaurant_card_bottom_infos_title">La note enchantée</h3>
+                            <p class="restaurant_card_bottom_place">Charonne</p>
                         </div>
-                    </a>
-                    <a href="./menu_la_note_enchantee.html" class="restaurant_card">
-                        <div class="restaurant_card_top">
-                            <img src="./images/restaurants/la_note_enchantée.jpg" alt="photo la note enchantée">
-                            <span class="new">Nouveau</span>
+                        <i class="far fa-heart fa-xl"></i>
+                    </div>
+                </a>
+                <a href="./menu_a_la_francaise.html" class="restaurant_card">
+                    <div class="restaurant_card_top">
+                        <img src="./images/restaurants/A_la_française.jpg" alt="photo a la française">
+                    </div>
+                    <div class="restaurant_card_bottom">
+                        <div class="restaurant_card_bottom_infos">
+                            <h3 class="restaurant_card_bottom_infos_title">À la française</h3>
+                            <p class="restaurant_card_bottom_place">Cité Rouge</p>
                         </div>
-                        <div class="restaurant_card_bottom">
-                            <div class="restaurant_card_bottom_infos">
-                                <h4 class="restaurant_card_bottom_infos_title">La note enchantée</h4>
-                                <p class="restaurant_card_bottom_place">Charonne</p>
-                            </div>
-                            <i class="far fa-heart fa-xl"></i>
+                        <i class="far fa-heart fa-xl"></i>
+                    </div>
+                </a>
+                <a href="./menu_le_delice_des_sens.html" class="restaurant_card">
+                    <div class="restaurant_card_top">
+                        <img src="./images/restaurants/les_delices_des_sens.jpg" alt="photo les delices des sens">
+                    </div>
+                    <div class="restaurant_card_bottom">
+                        <div class="restaurant_card_bottom_infos">
+                            <h3 class="restaurant_card_bottom_infos_title">Le délice des sens</h3>
+                            <p class="restaurant_card_bottom_place">Folie-Méricourt</p>
                         </div>
-                    </a>
-                    <a href="./menu_a_la_francaise.html" class="restaurant_card">
-                        <div class="restaurant_card_top">
-                            <img src="./images/restaurants/A_la_française.jpg" alt="photo a la française">
-                        </div>
-                        <div class="restaurant_card_bottom">
-                            <div class="restaurant_card_bottom_infos">
-                                <h4 class="restaurant_card_bottom_infos_title">À la française</h4>
-                                <p class="restaurant_card_bottom_place">Cité Rouge</p>
-                            </div>
-                            <i class="far fa-heart fa-xl"></i>
-                        </div>
-                    </a>
-                    <a href="./menu_le_delice_des_sens.html" class="restaurant_card">
-                        <div class="restaurant_card_top">
-                            <img src="./images/restaurants/les_delices_des_sens.jpg" alt="photo les delices des sens">
-                        </div>
-                        <div class="restaurant_card_bottom">
-                            <div class="restaurant_card_bottom_infos">
-                                <h4 class="restaurant_card_bottom_infos_title">Le délice des sens</h4>
-                                <p class="restaurant_card_bottom_place">Folie-Méricourt</p>
-                            </div>
-                            <i class="far fa-heart fa-xl"></i>
-                        </div>
-                    </a>
-                </div>
-            </section>
+                        <i class="far fa-heart fa-xl"></i>
+                    </div>
+                </a>
+            </div>
+        </section>
         <!--SECTION RESTAURANTS END-->
     </main>
     <!--FOOTER START-->
     <footer class="footer">
         <div class="footer_display">
-            <p class="footer_title">ohmyfood</p>
+            <h4 class="footer_title">ohmyfood</h4>
             <ul>
                 <li>
                     <i class="fa-solid fa-utensils"></i>
@@ -144,4 +146,5 @@
     </footer>
     <!--FOOTER END-->
 </body>
+
 </html>

@@ -57,74 +57,6 @@ table {
   box-sizing: border-box;
 }
 
-/* LOADER */
-.loader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  z-index: 999;
-  animation: loader-opacity 4s forwards;
-  animation-iteration-count: 1;
-  background-color: rgba(246, 246, 246, 0.75);
-  opacity: 1;
-  margin: auto;
-  padding: 0;
-}
-
-@keyframes loader-opacity {
-  0% {
-    opacity: 1;
-    display: flex;
-  }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    z-index: -1;
-  }
-}
-.loader_text {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  background: -webkit-linear-gradient(left, #FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-weight: bolder;
-  font-size: 24px;
-  margin-bottom: 20px;
-  opacity: 1;
-}
-
-.loader_mobile {
-  border: 1px solid #9356DC;
-  padding: 2px;
-  width: 80%;
-}
-.loader_mobile__bar {
-  background: linear-gradient(0.25turn, #FF79DA, #9356DC);
-  height: 20px;
-  width: 100%;
-  transform-origin: left;
-  transform: scaleX(0);
-  animation: loader-anim 3s cubic-bezier(0.32, 0, 0.07, 1) forwards;
-}
-
-@keyframes loader-anim {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
-  }
-}
 /* Header */
 header {
   display: flex;
@@ -156,7 +88,7 @@ header .fa-arrow-left {
 main {
   padding-top: 7vh;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   main {
     padding-top: 0;
     height: 88vh;
@@ -189,7 +121,7 @@ h2 {
   width: 100%;
 }
 
-h4 {
+h3 {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 8px;
@@ -214,7 +146,7 @@ h4 {
   width: 90%;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .footer_title {
     display: flex;
     justify-content: center;
@@ -222,7 +154,7 @@ h4 {
     font-size: 150%;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .footer ul {
     display: flex;
     justify-content: space-around;
@@ -243,295 +175,6 @@ h4 {
   color: white;
 }
 
-.localisation {
-  font-size: 16px;
-  width: 100%;
-  height: auto;
-  background-color: #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  font-weight: bold;
-}
-@media screen and (min-width: 1200px) {
-  .localisation {
-    margin-top: 0;
-  }
-}
-.localisation h3 {
-  padding: 16px;
-}
-
-.intro {
-  background-color: #f6f6f6;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  padding: 24px;
-  text-align: center;
-}
-.intro p {
-  padding-bottom: 24px;
-}
-.intro a {
-  margin-bottom: 24px;
-}
-
-#fonctionnement {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  padding-bottom: 40px;
-  padding-top: 16px;
-}
-@media screen and (min-width: 750px) and (max-width: 1199px) {
-  #fonctionnement {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    width: auto;
-  }
-}
-
-.liste {
-  width: 90%;
-}
-@media screen and (min-width: 1200px) {
-  .liste {
-    max-width: 1440px;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
-@media screen and (min-width: 750px) and (max-width: 1199px) {
-  .liste {
-    width: auto;
-  }
-}
-
-.accueil_h2 {
-  width: 90%;
-}
-@media screen and (min-width: 1200px) {
-  .accueil_h2 {
-    display: flex;
-    justify-content: center;
-  }
-}
-@media screen and (min-width: 750px) and (max-width: 1199px) {
-  .accueil_h2 {
-    width: auto;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .h2_bottom {
-    border-bottom: 2px solid #99E2D0;
-    padding-bottom: 5px;
-  }
-}
-
-.element-liste {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-  width: 95%;
-  height: auto;
-  padding: 32px 0 24px 0;
-  background-color: #f6f6f6;
-  border-radius: 25px;
-  margin-bottom: 24px;
-  position: relative;
-  left: 15px;
-  box-shadow: 0px 5px 10px #c5c5c5;
-  transition: 0.2s;
-}
-.element-liste:hover {
-  box-shadow: 4px 5.3333333333px 8px rgba(128, 128, 128, 0.5);
-}
-.element-liste:active {
-  box-shadow: 4px 5.3333333333px 8px rgba(128, 128, 128, 0.5);
-}
-@media screen and (min-width: 1200px) {
-  .element-liste {
-    width: 25%;
-    min-width: 300px;
-  }
-}
-@media screen and (min-width: 750px) and (max-width: 1199px) {
-  .element-liste {
-    min-width: 300px;
-  }
-}
-.element-liste__numero {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  color: white;
-  font-weight: bold;
-  width: 30px;
-  height: 30px;
-  background-color: #9356DC;
-  border-radius: 100%;
-  position: absolute;
-  left: -15px;
-}
-.element-liste__icon {
-  padding: 0 25px 0 40px;
-  color: #7e7e7e;
-  font-size: 22px;
-}
-.element-liste__txt {
-  font-weight: bold;
-  font-size: 16px;
-}
-.element-liste:hover {
-  background-color: #f2eafb;
-  cursor: pointer;
-}
-.element-liste:hover .element-liste__icon {
-  color: #9356DC;
-}
-.element-liste:active {
-  background-color: #f2eafb;
-  cursor: pointer;
-}
-.element-liste:active .element-liste__icon {
-  color: #9356DC;
-}
-
-#restaurants {
-  background-color: #f6f6f6;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  padding-top: 32px;
-}
-
-.restaurant_display_cards {
-  width: 90%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 60px;
-  justify-content: space-between;
-  height: 1050px;
-}
-@media screen and (min-width: 1200px) {
-  .restaurant_display_cards {
-    max-width: 1440px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: row;
-    height: auto;
-    margin-bottom: 30px;
-  }
-}
-@media screen and (min-width: 750px) and (max-width: 1199px) {
-  .restaurant_display_cards {
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: row;
-    height: auto;
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 750px) and (max-width: 1199px) {
-  .display_top {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-  }
-}
-
-.restaurant_card {
-  width: 100%;
-  height: auto;
-  background-color: white;
-  border-radius: 10px;
-  position: relative;
-  box-shadow: 0px 5px 10px #c5c5c5;
-  transition: 0.2s;
-}
-.restaurant_card:hover {
-  box-shadow: 4px 5.3333333333px 8px rgba(128, 128, 128, 0.5);
-}
-.restaurant_card:active {
-  box-shadow: 4px 5.3333333333px 8px rgba(128, 128, 128, 0.5);
-}
-@media screen and (min-width: 1200px) {
-  .restaurant_card {
-    width: 22%;
-    justify-content: space-around;
-    margin: 20px 0 30px 0;
-  }
-}
-@media screen and (min-width: 750px) and (max-width: 1199px) {
-  .restaurant_card {
-    width: 40%;
-    justify-content: space-around;
-    margin: 20px 0 30px 0;
-  }
-}
-.restaurant_card_top {
-  width: 100%;
-  height: 175px;
-}
-.restaurant_card_top img {
-  width: 100%;
-  height: 175px;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
-  object-position: 50% 62%;
-}
-.restaurant_card_top .new {
-  width: 80px;
-  height: 30px;
-  font-size: 16px;
-  color: #008766;
-  background-color: #99e2d0;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  font-weight: 600;
-  position: absolute;
-  right: 12px;
-  top: 12px;
-}
-.restaurant_card_bottom {
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-}
-
-@media screen and (min-width: 1200px) {
-  .main-accueil {
-    padding-top: 7vh;
-    height: 100%;
-  }
-}
-
 .page_menu {
   box-shadow: none;
   border-bottom: 2px solid #f6f6f6;
@@ -548,11 +191,11 @@ h4 {
   position: fixed;
   object-fit: cover;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .img_bckground_menu {
-    object-fit: fill;
-    height: 100vh;
-    width: 100vw;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -568,7 +211,7 @@ h4 {
   top: 220px;
   margin-bottom: 220px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .menu {
     background-color: rgba(246, 246, 246, 0.6);
     width: 90%;
@@ -587,7 +230,7 @@ h4 {
   flex-direction: column;
   width: 100%;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .display_menu_destop {
     display: flex;
     justify-content: space-between;
@@ -610,7 +253,7 @@ h4 {
   font-weight: lighter;
   padding-left: 0;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .restaurant-title__name {
     margin-left: 4%;
   }
@@ -620,7 +263,7 @@ h4 {
   width: 90%;
   padding-bottom: 40px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .categorie-repas {
     width: 34%;
     display: flex;
@@ -632,19 +275,25 @@ h4 {
 }
 .categorie-repas h3 {
   margin-bottom: 20px;
+  position: relative;
 }
-.categorie-repas h3 span {
-  border-bottom: 2px solid #99E2D0;
-  padding-bottom: 3px;
+.categorie-repas h3::after {
+  position: absolute;
+  top: 22px;
+  content: "";
+  width: 40px;
+  height: 2px;
+  background-color: #99E2D0;
+  display: block;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .categorie-repas h3 {
     margin: 10px auto 25px 10%;
     width: 100%;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .border_right {
     border-right: 4px dashed #99E2D0;
   }
@@ -669,7 +318,7 @@ h4 {
 .element-repas:active {
   box-shadow: 4px 5.3333333333px 8px rgba(128, 128, 128, 0.5);
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .element-repas {
     width: 80%;
     margin: auto;
@@ -698,6 +347,7 @@ h4 {
 .element-repas__prix {
   margin-left: auto;
   padding: 33px 20px 0 0;
+  font-weight: 700;
 }
 
 .button {
@@ -1099,4 +749,4 @@ h4 {
   transition: all 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=menus.css.map */

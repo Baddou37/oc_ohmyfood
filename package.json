@@ -4,7 +4,7 @@
   "description": "��#\u0000 \u0000o\u0000h\u0000m\u0000y\u0000f\u0000o\u0000o\u0000d\u0000\r\u0000 \u0000",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./scss/main.scss:./css/styles.css",
+    "sass": "sass --watch ./scss/home.scss:./css/home.css --style expanded ./scss/menus.scss:./css/menus.css --style expanded",
     "prefix": "postcss ./css/styles.css --use autoprefixer -d ./css/prefixed/"
   },
   "repository": {

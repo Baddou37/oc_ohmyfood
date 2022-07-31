@@ -1,19 +1,44 @@
 .localisation {
     font-size: $size;
     width: 100%;
-    height: auto;
+    height: 50px;
     background-color: $color-back-ground-localisation;
-    @include flex-position ($axe-p: center, $x-y: row);
-    font-weight: bold;
+    @include flex-position ($axe-p:center, $x-y:center);
 
-    @include desktop {
-        margin-top: 0;
+    &__icon{
+        margin-right: 10px;
     }
 
-    h3 
-    {
-        padding: $size;
+    &__place {
+        border: none;
+        font-size: 20px;
+        background-color: $color-back-ground-localisation;
+        width: 160px;
+        outline: none;
+        font-weight: 700;
+        &::placeholder {
+            font-weight: 700;
+            display: flex;
+            text-align: center;
+        }
+
+        &::-webkit-input-placeholder {
+            color: black;
+        }
+         
+         &:-moz-placeholder { /* Firefox 18- */
+            color: black;
+        }
+         
+         &::-moz-placeholder {  /* Firefox 19+ */
+            color: black;
+        }
+         
+         &:-ms-input-placeholder {  
+            color: black;
+        }
     }
+
 }
 
 .intro
@@ -91,6 +116,7 @@
     margin-bottom: $size*1.5;
     position: relative;
     left: 15px;
+    margin-right: 40px;
     @include shadow;
 
     @include desktop {
@@ -125,24 +151,15 @@
         font-weight: bold;
         font-size: $size;
     }
+}
 
-    &:hover{
-        background-color: lighten($color-primary,35);
-        cursor: pointer;
-    }
+.icon_violet {
+    color: $color-primary;
+}
 
-    &:hover .element-liste__icon {
-        color: $color-primary;
-    }
-
-    &:active{
-        background-color: lighten($color-primary,35);
-        cursor: pointer;
-    }
-
-    &:active .element-liste__icon {
-        color: $color-primary;
-    }
+.violet {
+    background-color: lighten($color-primary,35);
+    cursor: pointer;
 }
 
 
@@ -239,8 +256,6 @@
         padding: $size;
         @include flex-position ($axe-p: space-between, $axe-s: center, $x-y: row);
     }
-
-    
 }
 
 .main-accueil{
