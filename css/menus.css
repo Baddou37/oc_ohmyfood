@@ -58,7 +58,7 @@ table {
 }
 
 /* Header */
-header {
+.header {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -71,15 +71,15 @@ header {
   background-color: white;
   height: 7vh;
 }
-header h1 {
+.header h1 {
   font-family: "Shrikhand", cursive;
   font-size: 32px;
   padding: 20px 0 10px 0;
 }
-header a {
+.header a {
   color: black;
 }
-header .fa-arrow-left {
+.header .fa-arrow-left {
   position: absolute;
   left: 24px;
   top: 55%;
@@ -194,6 +194,7 @@ h3 {
 @media screen and (min-width: 992px) {
   .img_bckground_menu {
     object-fit: cover;
+    z-index: -2;
     height: 100%;
     width: 100%;
   }

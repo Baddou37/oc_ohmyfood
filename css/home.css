@@ -56,8 +56,76 @@ table {
   box-sizing: border-box;
 }
 
+/* LOADER */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  animation: loader-opacity 4s forwards;
+  animation-iteration-count: 1;
+  background-color: rgba(246, 246, 246, 0.75);
+  opacity: 1;
+  margin: auto;
+  padding: 0;
+}
+
+@keyframes loader-opacity {
+  0% {
+    opacity: 1;
+    display: flex;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+.loader_text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background: -webkit-linear-gradient(left, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bolder;
+  font-size: 24px;
+  margin-bottom: 20px;
+  opacity: 1;
+}
+
+.loader_mobile {
+  border: 1px solid #9356DC;
+  padding: 2px;
+  width: 80%;
+}
+.loader_mobile__bar {
+  background: linear-gradient(0.25turn, #FF79DA, #9356DC);
+  height: 20px;
+  width: 100%;
+  transform-origin: left;
+  transform: scaleX(0);
+  animation: loader-anim 3s cubic-bezier(0.32, 0, 0.07, 1) forwards;
+}
+
+@keyframes loader-anim {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 /* Header */
-header {
+.header {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -70,15 +138,15 @@ header {
   background-color: white;
   height: 7vh;
 }
-header h1 {
+.header h1 {
   font-family: "Shrikhand", cursive;
   font-size: 32px;
   padding: 20px 0 10px 0;
 }
-header a {
+.header a {
   color: black;
 }
-header .fa-arrow-left {
+.header .fa-arrow-left {
   position: absolute;
   left: 24px;
   top: 55%;
