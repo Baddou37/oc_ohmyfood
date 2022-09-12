@@ -17,11 +17,12 @@
 
     &::after{
         height: 24px;
-        color: transparent;
+        
         content: "\f004";
         font-weight: 900;
         @include flex-position;
         background-image: linear-gradient($color-secondary, $color-primary);
+        color: transparent;
         background-clip: text;
         -webkit-background-clip: text;
         transform: translate(0) scale(0);
